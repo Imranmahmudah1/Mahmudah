@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bundesliga Pulse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+    }
+    header {
+      background-color: #2E2E2E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #DC052D;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #A8001F;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #DC052D, #FDE100);
+      color: white;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .teams {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .team-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover {
+      transform: scale(1.05);
+    }
+    .team-card img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #2E2E2E;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      .teams {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bundesliga Pulse</h1>
+  <p>Your gateway to Germany’s top football clubs</p>
+</header>
+
+<nav>
+  <a href="bayern.html" target="_blank">Bayern Munich</a>
+  <a href="dortmund.html" target="_blank">Dortmund</a>
+  <a href="leipzig.html" target="_blank">RB Leipzig</a>
+  <a href="stuttgart.html" target="">Stuttgart</a>
+  <a href="leverkusen.html" target="_blank">Leverkusen</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Explore the Bundesliga’s Elite</h2>
+  <p>Team profiles, player stats, and more all in one place</p>
+</div>
+
+<div class="teams">
+  <div class="team-card">
+    <img src="https://logos-world.net/wp-content/uploads/2020/06/FC-Bayern-Munchen-Logo-History.jpg" alt="Bayern">
+    <h3>Bayern Munich</h3>
+    <a href="bayern.html">View Profile</a>
+  </div>
+  <div class="team-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg" alt="Dortmund">
+    <h3>Dortmund</h3>
+    <a href="dortmund.html">View Profile</a>
+  </div>
+  <div class="team-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/04/RB_Leipzig_2014_logo.svg" alt="Leipzig">
+    <h3>RB Leipzig</h3>
+    <a href="leipzig.html">View Profile</a>
+  </div>
+  <div class="team-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/89/VfB_Stuttgart_Logo.svg" alt="Stuttgart">
+    <h3>Stuttgart</h3>
+    <a href="stuttgart.html">View Profile</a>
+  </div>
+  <div class="team-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Bayer_04_Leverkusen_logo.svg" alt="Leverkusen">
+    <h3>Leverkusen</h3>
+    <a href="leverkusen.html">View Profile</a>
+  </div>
+</div>
+
+<div class="section" id="contact" style="padding: 40px; background-color: white; max-width: 600px; margin: auto; border-radius: 10px;">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" style="width:100%; padding:10px;"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" style="width:100%; padding:10px;"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" style="width:100%; padding:10px;"></textarea><br><br>
+    <button type="submit" style="background-color:#DC052D; color:white; padding:10px 20px; border:none; border-radius:5px;">Send</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Bundesliga Pulse | Designed by Imran
+</footer>
+
+</body>
+</html>
